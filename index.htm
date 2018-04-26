@@ -9,8 +9,24 @@
   <meta name="description" content="HTML5 Template">
 
 </head>
+<script> 
+function changeImage() {
+	var image = document.getElementById('light');
+	if (image.src.match("greenlight")) {
+	    image.src = "redlight.jpg";
+} else {
+	image.src = "redlight.jpg";
+}
+}
+	
+</script>
 
 <body>
-<p>Sample text</p>
+	<img id="light" onclick="changeImage()"
+	src="redlight.jpg" width="100" height="180">
+
+
+	
+
 </body>
 </html>
