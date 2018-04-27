@@ -8,25 +8,24 @@
 	<p> The Race </p>
   <meta name="description" content="HTML5 Template">
 
-</head>
-<script> 
-function changeImage() {
-	var image = document.getElementById('light');
-	if (image.src.match("greenlight")) {
-	    image.src = "redlight.jpeg";
-} else {
-	image.src = "redlight.jpeg";
-}
-}
-	
-</script>
-
 <body>
-	<img id="light" onclick="changeImage()"
-	src="redlight.jpeg" width="100" height="180">
+<script type="text/javascript"> 
 
+function changeimage() {
+	var image=document.getElementById('light');
+	if(img.src="image/redlight.jpg") 
+     {
+	image.src="images/greenlight.jpg";
+     }
+	else
+        {
+	img.src="images/redlight.jpg";
+       }
+}
+</script>
+<body>
 
-	
+<img id="light" src ="images/redlight.jpg" onclick = "changeimage()/>"
 
 </body>
 </html>
