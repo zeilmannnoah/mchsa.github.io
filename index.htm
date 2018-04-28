@@ -1,46 +1,66 @@
 <!doctype html>
 
 <html lang="en">
-<head>
+
   <meta charset="utf-8">
 
   <title>Maria's Homepage</title>
 	<p> The Race </p>
   <meta name="description" content="HTML5 Template">
+<head>
+     <style>
+	body{margin:0px;}
+	
+	#D1{background-image:url('D1.jpg');position:absolute;top:0;width:		259px;height:100px;}
+	#D2{background-image:url('D2.jpg');position:absolute;top:			100px;width:259px;height:100px;}
+	#light{text-align:center;}
+	#mainlight{width:90px;}
+	  </style>
 
-<body>
-<script type="text/javascript"> 
+	var interval, D1=0, D2=0, first, second, one, two, firstleft, secondleft;
+	function change(){
+		document.getElementById("moonlight".src="greenlight.jpeg";
+		interval = setInter(function() {
+		racing()} , 1000);
+	}
+	function racing() {
+	var temp1, temp2;
+	first=document.getElementById("D1");Style=window.getComputedStyle(first);firstleft = 						style.getPropertyValue('left');firstleft=firstleft.replace(px','');
+	second=document.getElementById("D2");style = window.getComputedStyle(second);secondleft = 			 		style.getPropertyValue('left');secondleft=secondleft.replace(px','');
+		one = Math.floor(Math.random() * 50);
+		two = Math.floor(Math.random() * 50);
+		temp1=parseInt(firstleft) + parseInt(one);
+		temp2=parseInt(secondleft) + parseInt(two);
+		first.style.left = parseInt(firstleft) + parseInt(one) + "px";
+		second.style.left = parseInt(secondleft) + parseInt(two) + "px";
+	if(temp1>=(document.documentElement.clientWidth - 259)){
+		alert("D1 wins")
+		clearIntervale(interval);
+		first.syle.left = "0px";
+		second.syle.left = "0px";
+		document.getElementById("moonlight").src="redlight.jpeg";
+	}
 
-function changeimage() {
-	var light = document.getElementById('light').src="images/greenlight.jpeg";
+	if(temp12>=(document.documentElement.clientWidth - 259)){
+		alert("D2 wins")
+		clearIntervale(interval);
+		first.syle.left = "0px";
+		second.syle.left = "0px";
+		document.getElementById("moonlight").src="redlight.jpeg";
+	}
 }
  
+
+
+				
+	</script>
+    </head>
+    <body>
 	
-	
-function moveimage() {
-	var dino= [document.getElementById("dino1"),document.getElementById("dino2")];
-	var interval = setInterval(moveimage, 250);
-
-	 Math.floor(Math.randon() * dinos.length) ;
-	var newPos = parseInt (dino.style.left || 0) + 25;
-	dino.style.left = newPos + "px";
-if (newPos + dino.clientWidth) >= window.innterWidth) {
-	clearInterval(interval);
-	alert ( "The Winner is" + dino.id);
-} 
-
-}
-
-</script>
-<body>
-	
-<img src ="images/redlight.jpeg" id="light" width="180" height="180/>" </br> </br>
-<buttong onclick="changeimage()">Start the race</button></br> </br>
-
-<img src="images/D1.jpg" id="dino1 width="200" height="180/>" </br></br>
- <img src="images/D2.jpg" id="dino2" width="180" height="180/>" />
- 
-
-
-</body>
+	<div id="D1"></div>
+ 	<div id="D1"></div>
+	<div id="light">
+		<img src="redlight.jpeg" id="mainlight" onclick="change()" />
+	</div>
+    </body>
 </html>
