@@ -16,7 +16,7 @@
 	#light{text-align:center;}
 	#mainlight{width:90px;}
 	  </style>
-
+	<script>
 	var interval, D1=0, D2=0, first, second, one, two, firstleft, secondleft;
 	function change(){
 		document.getElementById("mainlight").src="images/greenlight.jpeg";
@@ -24,8 +24,8 @@
 	}
 	function racing() {
 	var temp1, temp2;
-	first=document.getElementById("D1");Style=window.getComputedStyle(first);firstleft = 						style.getPropertyValue('left');firstleft=firstleft.replace(px','');
-	second=document.getElementById("D2");style = window.getComputedStyle(second);secondleft = 			 		style.getPropertyValue('left');secondleft=secondleft.replace(px','');
+	first=document.getElementById("D1");Style=window.getComputedStyle(first);firstleft = 				style.getPropertyValue('left');firstleft=firstleft.replace(px','');
+	second=document.getElementById("D2");style = window.getComputedStyle(second);secondleft = 			 	style.getPropertyValue('left');secondleft=secondleft.replace(px','');
 		one = Math.floor(Math.random() * 50);
 		two = Math.floor(Math.random() * 50);
 		temp1=parseInt(firstleft) + parseInt(one);
