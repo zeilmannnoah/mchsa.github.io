@@ -12,14 +12,35 @@
 <script type="text/javascript"> 
 
 function changeimage() {
-	document.getElementById('light').src="images/greenlight.jpeg";
-     }
+	var light = document.getElementById('light').src="images/greenlight.jpeg";
+}
+ 
+	
+	
+function moveimage() {
+	var dino= [document.getElementById("dino1"),document.getElementById("dino2")];
+	var interval = setInterval(moveimage, 250);
+
+	 Math.floor(Math.randon() * dinos.length) ;
+	var newPos = parseInt (dino.style.left || 0) + 25;
+	dino.style.left = newPos + "px";
+if (newPos + dino.clientWidth) >= window.innterWidth) {
+	clearInterval(interval);
+	alert ( "The Winner is" + dino.id);
+} 
+
+}
+
 </script>
 <body>
-
+	
 <img src ="images/redlight.jpeg" id="light" width="180" height="180/>" </br> </br>
+<buttong onclick="changeimage()">Start the race</button></br> </br>
 
-<buttong onclick="changeimage()">Start the race</button> 
+<img src="images/D1.jpg" id="dino1 width="200" height="180/>" </br></br>
+ <img src="images/D2.jpg" id="dino2" width="180" height="180/>" />
+ 
+
 
 </body>
 </html>
