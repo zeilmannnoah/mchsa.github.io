@@ -2,9 +2,15 @@
 
 <html 
 <head>
+	  <meta charset="utf-8">
+
+  <title>Maria's Homepage</title>
+	<p> The Race </p>
+
      <style>
 	body{margin:0px;}
-	
+	#firstroad{width:100%;height:100px;background-image:url('images/road.jpg');}
+	#secondroad{width:100%;height:100px;background-image:url('images/road.jpg');}
 	#D1{background-image:url('images/D1.jpg');position:absolute;top:0;width:259px;height:100px;}
 	#D2{background-image:url('images/D2.jpg');position:absolute;top:100px;width:259px;height:100px;}
 	#light{text-align:center;}
@@ -13,9 +19,8 @@
 
 	var interval, D1=0, D2=0, first, second, one, two, firstleft, secondleft;
 	function change(){
-		document.getElementById("mainlight".src="images/greenlight.jpeg";
-		interval = setInter(function() {
-		racing()} , 1000);
+		document.getElementById("mainlight").src="images/greenlight.jpeg";
+		interval = setInter(function() {racing()} , 1000);
 	}
 	function racing() {
 	var temp1, temp2;
@@ -50,7 +55,8 @@
 	</script>
     </head>
     <body>
-	
+	<div id="firstroad"></div>
+	<div id="secondroad"></div>
 	<div id="D1"></div>
  	<div id="D1"></div>
 	<div id="light">
