@@ -22,7 +22,7 @@
 
 	#secondroad{width:100%;height:100px;background-image:url('images/road.jpg');}
 
-	#trex{background-image:url('images/trex.png');position:absolute;top:0;width:259px;height:100px;}
+	#bluecar{background-image:url('images/bluecar.png');position:absolute;top:0;width:259px;height:100px;}
 
 	#pinkcar{background-image:url('images/pinkcar.png');position:absolute;top:100px;width:259px;height:100px;}
 
@@ -35,7 +35,7 @@
 
 	<script type="text/javascript">
 
-	var interval, trex=0, pinkcar=0, first, second, one, two, firstleft, secondleft;
+	var interval, bluecar=0, pinkcar=0, first, second, one, two, firstleft, secondleft;
 
 	function change(){
 
@@ -49,7 +49,7 @@
 
 	var temp1, temp2;
 
-first=document.getElementById("trex");style = window.getComputedStyle(first);firstleft = style.getPropertyValue('left');firstleft = firstleft.replace('px','');
+first=document.getElementById("bluecar");style = window.getComputedStyle(first);firstleft = style.getPropertyValue('left');firstleft = firstleft.replace('px','');
 
 second=document.getElementById("pinkcar");style = window.getComputedStyle(second);secondleft = style.getPropertyValue('left');secondleft = secondleft.replace('px','');
 
@@ -67,7 +67,7 @@ second=document.getElementById("pinkcar");style = window.getComputedStyle(second
 
 	if(temp1>=(document.documentElement.clientWidth - 259)){
 
-		alert("trex wins");
+		alert("blue car wins");
 
 		clearInterval(interval);
 
@@ -83,7 +83,7 @@ second=document.getElementById("pinkcar");style = window.getComputedStyle(second
 
 	if(temp2>=(document.documentElement.clientWidth - 259)){
 
-		alert("pinkcar wins");
+		alert("pink car wins");
 
 		clearInterval(interval);
 
