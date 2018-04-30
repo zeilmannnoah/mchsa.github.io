@@ -35,7 +35,7 @@
 
 	<script type="text/javascript">
 
-	var interval, bluecar=0, pinkcar=0, first, second, one, two, firstleft, secondleft;
+	var interval, trex=0, pinkcar=0, first, second, one, two, firstleft, secondleft;
 
 	function change(){
 
@@ -49,7 +49,7 @@
 
 	var temp1, temp2;
 
-first=document.getElementById("bluecar");style = window.getComputedStyle(first);firstleft = style.getPropertyValue('left');firstleft = firstleft.replace('px','');
+first=document.getElementById("trex");style = window.getComputedStyle(first);firstleft = style.getPropertyValue('left');firstleft = firstleft.replace('px','');
 
 second=document.getElementById("pinkcar");style = window.getComputedStyle(second);secondleft = style.getPropertyValue('left');secondleft = secondleft.replace('px','');
 
@@ -67,7 +67,7 @@ second=document.getElementById("pinkcar");style = window.getComputedStyle(second
 
 	if(temp1>=(document.documentElement.clientWidth - 259)){
 
-		alert("bluecar wins");
+		alert("trex wins");
 
 		clearInterval(interval);
 
