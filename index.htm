@@ -36,16 +36,16 @@ second=document.getElementById("pinkcar");style = window.getComputedStyle(second
 		first.style.left = parseInt(firstleft) + parseInt(one) + "px";
 		second.style.left = parseInt(secondleft) + parseInt(two) + "px";
 	if(temp1>=(document.documentElement.clientWidth - 259)){
-		alert("bluecar wins")
-		clearIntervale(interval);
+		alert("bluecar wins");
+		clearInterval(interval);
 		first.syle.left = "0px";
 		second.syle.left = "0px";
 		document.getElementById("mainlight").src="images/redlight.jpeg";
 	}
 
 	if(temp2>=(document.documentElement.clientWidth - 259)){
-		alert("pinkcar wins")
-		clearIntervale(interval);
+		alert("pinkcar wins");
+		clearInterval(interval);
 		first.syle.left = "0px";
 		second.syle.left = "0px";
 		document.getElementById("mainlight").src="images/redlight.jpeg";
